@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-cfindex = os.getenv("INSTANCE_INDEX")
+cfindex = os.getenv("CF_INSTANCE_INDEX")
 
 svrport = os.getenv('VCAP_APP_PORT', '5000')
 

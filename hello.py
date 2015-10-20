@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 cfindex = os.getenv("CF_INSTANCE_INDEX", 0)
 
-svrport = os.getenv('VCAP_APP_PORT', '5000')
+svrport = os.getenv('PORT', '5000')
 
 @app.route('/')
 def hello_world():
